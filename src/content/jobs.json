@@ -1,0 +1,164 @@
+[
+  {
+    "id": "cnc-engraving-operator",
+    "active": false,
+    "posted": "2026-08-20",
+    "closes": "2026-10-19",
+    "title": {
+      "en": "CNC & Engraving Operator",
+      "ar": "مشغّل ماكينات CNC والحفر"
+    },
+    "department": {
+      "en": "Production",
+      "ar": "الإنتاج"
+    },
+    "location": {
+      "en": "Dubai Investment Park, Dubai",
+      "ar": "مجمع دبي للاستثمار، دبي"
+    },
+    "type": {
+      "en": "Full-time",
+      "ar": "دوام كامل"
+    },
+    "summary": {
+      "en": "Set up and run CNC and laser engraving machines for crystal, metal and acrylic awards, working to tolerances that leave no visible correction on a finished piece.",
+      "ar": "تشغيل وضبط ماكينات CNC والحفر بالليزر على الكريستال والمعدن والأكريليك، بدقة لا تترك أثراً ظاهراً على القطعة النهائية."
+    },
+    "responsibilities": {
+      "en": [
+        "Set up, calibrate and operate CNC routers and laser engravers",
+        "Read technical drawings and translate artwork into machine files",
+        "Run first-article checks before a batch is released to finishing",
+        "Keep machine maintenance logs and flag tooling wear early"
+      ],
+      "ar": [
+        "ضبط وتشغيل ماكينات CNC وأجهزة الحفر بالليزر ومعايرتها",
+        "قراءة الرسومات الفنية وتحويل التصميم إلى ملفات تشغيل",
+        "فحص العينة الأولى قبل تمرير الدفعة إلى قسم التشطيب",
+        "توثيق أعمال الصيانة والتنبيه المبكر لتآكل العدّة"
+      ]
+    },
+    "requirements": {
+      "en": [
+        "3+ years on CNC or laser engraving equipment",
+        "Comfortable with CorelDRAW, AutoCAD or equivalent",
+        "Experience with crystal, glass or metal finishing is an advantage",
+        "UAE residence visa or eligibility to obtain one"
+      ],
+      "ar": [
+        "خبرة 3 سنوات فأكثر على ماكينات CNC أو الحفر بالليزر",
+        "إتقان CorelDRAW أو AutoCAD أو ما يعادلهما",
+        "خبرة في تشطيب الكريستال أو الزجاج أو المعدن ميزة إضافية",
+        "إقامة سارية في الإمارات أو أهلية الحصول عليها"
+      ]
+    }
+  },
+  {
+    "id": "account-manager-corporate-gifting",
+    "active": false,
+    "posted": "2026-08-20",
+    "closes": "2026-10-19",
+    "title": {
+      "en": "Account Manager — Corporate Gifting",
+      "ar": "مدير حسابات — الهدايا المؤسسية"
+    },
+    "department": {
+      "en": "Sales",
+      "ar": "المبيعات"
+    },
+    "location": {
+      "en": "Dubai, UAE",
+      "ar": "دبي، الإمارات"
+    },
+    "type": {
+      "en": "Full-time",
+      "ar": "دوام كامل"
+    },
+    "summary": {
+      "en": "Own a portfolio of corporate and government accounts from first brief to delivered order, working alongside the design and production teams in the factory.",
+      "ar": "إدارة محفظة من حسابات الشركات والجهات الحكومية من أول طلب حتى التسليم، بالتنسيق مع فريقي التصميم والإنتاج داخل المصنع."
+    },
+    "responsibilities": {
+      "en": [
+        "Manage named accounts across the UAE and wider GCC",
+        "Translate client briefs into production-ready specifications",
+        "Prepare quotations and track orders through the factory",
+        "Build repeat business from annual award and gifting programmes"
+      ],
+      "ar": [
+        "إدارة حسابات محددة داخل الإمارات ودول الخليج",
+        "تحويل متطلبات العميل إلى مواصفات جاهزة للإنتاج",
+        "إعداد عروض الأسعار ومتابعة الطلبات داخل المصنع",
+        "تنمية الأعمال المتكررة من برامج الجوائز والهدايا السنوية"
+      ]
+    },
+    "requirements": {
+      "en": [
+        "3+ years in B2B sales or account management in the UAE",
+        "Fluent English; Arabic is a strong advantage",
+        "Track record with corporate or government clients",
+        "UAE driving licence"
+      ],
+      "ar": [
+        "خبرة 3 سنوات فأكثر في مبيعات الشركات أو إدارة الحسابات في الإمارات",
+        "إتقان الإنجليزية، والعربية ميزة قوية",
+        "سجل عمل مع عملاء من الشركات أو الجهات الحكومية",
+        "رخصة قيادة إماراتية"
+      ]
+    }
+  },
+  {
+    "id": "3d-designer",
+    "active": false,
+    "posted": "2026-08-20",
+    "closes": "2026-10-19",
+    "title": {
+      "en": "3D Designer — Awards & Trophies",
+      "ar": "مصمم ثلاثي الأبعاد — الجوائز والدروع"
+    },
+    "department": {
+      "en": "Design Studio",
+      "ar": "استوديو التصميم"
+    },
+    "location": {
+      "en": "Dubai, UAE",
+      "ar": "دبي، الإمارات"
+    },
+    "type": {
+      "en": "Full-time",
+      "ar": "دوام كامل"
+    },
+    "summary": {
+      "en": "Turn a brief into a manufacturable award — concept renders the client can approve, then the files the factory floor actually builds from.",
+      "ar": "تحويل الفكرة إلى جائزة قابلة للتصنيع: مشاهد تقديمية يعتمدها العميل، ثم ملفات تنفيذية يعمل عليها المصنع."
+    },
+    "responsibilities": {
+      "en": [
+        "Produce concept renders and presentation visuals for clients",
+        "Prepare production files for CNC, casting and engraving",
+        "Work with production to keep designs within what the process allows",
+        "Maintain the studio's library of forms, bases and finishes"
+      ],
+      "ar": [
+        "إنتاج مشاهد تقديمية ومرئيات العرض للعملاء",
+        "إعداد ملفات الإنتاج لماكينات CNC والصب والحفر",
+        "التنسيق مع الإنتاج لإبقاء التصاميم ضمن حدود العملية التصنيعية",
+        "إدارة مكتبة الاستوديو من الأشكال والقواعد والتشطيبات"
+      ]
+    },
+    "requirements": {
+      "en": [
+        "Portfolio showing 3D product or object design",
+        "Strong in Rhino, SolidWorks, Blender or 3ds Max plus KeyShot",
+        "Understanding of moulding, casting or glass forming constraints",
+        "Based in the UAE or willing to relocate"
+      ],
+      "ar": [
+        "معرض أعمال يوضح تصميم منتجات أو مجسمات ثلاثية الأبعاد",
+        "إتقان Rhino أو SolidWorks أو Blender أو 3ds Max إضافة إلى KeyShot",
+        "فهم قيود القوالب والصب أو تشكيل الزجاج",
+        "الإقامة في الإمارات أو الاستعداد للانتقال إليها"
+      ]
+    }
+  }
+]

@@ -1,0 +1,127 @@
+# ──────────────────────────────────────────────────────────────────────────
+# Both locales are prefixed: English /en/*, Arabic /ar/*. Nothing is served
+# from a bare path, so every rule below is load-bearing — `output: "export"`
+# means there is no server and these are the only request-time logic the site
+# has. Netlify evaluates in file order and stops at the first match.
+# ──────────────────────────────────────────────────────────────────────────
+
+# ── The root ──
+# Arabic first: more specific, and order decides.
+#
+# 302, not 301: the target depends on a request header, so it must not be
+# cached as a permanent property of the URL. Netlify matches Language= against
+# Accept-Language, and any `ar-*` variant counts.
+/            /ar     302  Language=ar
+/            /en     302
+
+# ── Pre-cutover English URLs ──
+# English lived on bare paths until the move to /en. 301 so the old links keep
+# working and any accrued signal transfers.
+#
+# Listed one by one rather than a `/*  /en/:splat` catch-all: a catch-all here
+# would also swallow /ar/*, every asset path and the 404 itself, since these
+# run before static-file matching.
+/about       /en/about       301
+/craft       /en/craft       301
+/our-work    /en/our-work    301
+/careers     /en/careers     301
+/contact     /en/contact     301
+/privacy     /en/privacy     301
+/terms       /en/terms       301
+/products    /en/products    301
+/products/*  /en/products/:splat  301
+
+# Back-compat: /preview/ was the homepage's old location, pre-Next.
+/preview/*   /en     301
+
+# ── Old Webflow blog (crystalarc.net/blog/*) ──
+# 56 posts, Dec 2022 - Sep 2025, migrated at their original slugs. These are
+# the URLs with three years of links and rankings behind them, so each one is
+# mapped explicitly rather than by wildcard: 55 posts are English-only and one
+# is Arabic-only, and a wildcard would send the Arabic post to a 404.
+#
+# Columns are separated by a single space, not padded. Padding to a fixed
+# width silently produced NO separator on slugs longer than the pad, which
+# Netlify rejected as unparseable and which failed the whole deploy.
+/blog /en/blog 301
+/blog/10-creative-ideas-for-employee-achievement-awards /en/blog/10-creative-ideas-for-employee-achievement-awards 301
+/blog/6-tips-for-hosting-the-perfect-corporate-award-ceremony /en/blog/6-tips-for-hosting-the-perfect-corporate-award-ceremony 301
+/blog/all-you-need-to-know-about-corporate-award-programs /en/blog/all-you-need-to-know-about-corporate-award-programs 301
+/blog/art-of-recognition-choosing-perfect-crystal-trophy /en/blog/art-of-recognition-choosing-perfect-crystal-trophy 301
+/blog/best-materials-for-trophies-corporate-gifts /en/blog/best-materials-for-trophies-corporate-gifts 301
+/blog/breaking-the-mould-avant-garde-trophy-designs-for-modern-events /en/blog/breaking-the-mould-avant-garde-trophy-designs-for-modern-events 301
+/blog/building-emotional-connections-through-awards /en/blog/building-emotional-connections-through-awards 301
+/blog/celebrate-saudi-national-day-crystal-arc-trophies-custom-gifts /en/blog/celebrate-saudi-national-day-crystal-arc-trophies-custom-gifts 301
+/blog/celebrating-leadership-crystal-awards-for-exceptional-corporate-leaders /en/blog/celebrating-leadership-crystal-awards-for-exceptional-corporate-leaders 301
+/blog/commemorating-corporate-milestones-with-bespoke-crystal-trophies /en/blog/commemorating-corporate-milestones-with-bespoke-crystal-trophies 301
+/blog/crystal-and-beyond-the-right-choice-of-material-for-trophies /en/blog/crystal-and-beyond-the-right-choice-of-material-for-trophies 301
+/blog/crystal-arc-celebrating-the-year-of-the-camel /en/blog/crystal-arc-celebrating-the-year-of-the-camel 301
+/blog/crystal-awards-5-step-formula /en/blog/crystal-awards-5-step-formula 301
+/blog/crystal-clear-excellence-the-symbolism-behind-crystal-trophies /en/blog/crystal-clear-excellence-the-symbolism-behind-crystal-trophies 301
+/blog/crystal-trophies-personalisation-journey /en/blog/crystal-trophies-personalisation-journey 301
+/blog/crystal-trophy-design-in-2025-why-hybrid-materials-are-leading-the-way /en/blog/crystal-trophy-design-in-2025-why-hybrid-materials-are-leading-the-way 301
+/blog/custom-employee-awards /en/blog/custom-employee-awards 301
+/blog/custom-trophies-esports-quality-awards-competitive-gaming-events /en/blog/custom-trophies-esports-quality-awards-competitive-gaming-events 301
+/blog/discovering-the-perfect-eid-gift-a-curated-guide-for-memorable-giving /en/blog/discovering-the-perfect-eid-gift-a-curated-guide-for-memorable-giving 301
+/blog/eid-al-adha-corporate-gifting-strategy-for-business-bonds-tradition /en/blog/eid-al-adha-corporate-gifting-strategy-for-business-bonds-tradition 301
+/blog/elevating-corporate-prestige-with-unique-crystal-awards /en/blog/elevating-corporate-prestige-with-unique-crystal-awards 301
+/blog/event-excellence-starts-with-crystal-trophies-that-dazzle /en/blog/event-excellence-starts-with-crystal-trophies-that-dazzle 301
+/blog/forecasting-future-trends-in-crystal-trophies /en/blog/forecasting-future-trends-in-crystal-trophies 301
+/blog/get-ready-for-the-international-golf-day /en/blog/get-ready-for-the-international-golf-day 301
+/blog/glass-trophies-popular-choice-for-recognition-and-celebration /en/blog/glass-trophies-popular-choice-for-recognition-and-celebration 301
+/blog/global-influences-trophy-design-how-cultures-shape-awards /en/blog/global-influences-trophy-design-how-cultures-shape-awards 301
+/blog/how-to-choose-custom-trophies-for-business-events /en/blog/how-to-choose-custom-trophies-for-business-events 301
+/blog/innovative-corporate-gifts-a-guide-to-crystal-elegance /en/blog/innovative-corporate-gifts-a-guide-to-crystal-elegance 301
+/blog/inside-a-crystal-trophy-makers-factory /en/blog/inside-a-crystal-trophy-makers-factory 301
+/blog/luxury-meets-purpose-the-rise-of-crystal-awards-in-high-profile-ceremonies /en/blog/luxury-meets-purpose-the-rise-of-crystal-awards-in-high-profile-ceremonies 301
+/blog/metal-trophies-custom-unrestricted-design-rapid-production /en/blog/metal-trophies-custom-unrestricted-design-rapid-production 301
+/blog/navigating-the-corporate-gift-maze-the-insiders-guide-to-finding-the-perfect-supplier /en/blog/navigating-the-corporate-gift-maze-the-insiders-guide-to-finding-the-perfect-supplier 301
+/blog/premium-trophies-and-awards-why-craftsmanship-is-still-king /en/blog/premium-trophies-and-awards-why-craftsmanship-is-still-king 301
+/blog/preserving-history-how-crystal-trophies-are-made-and-maintained /en/blog/preserving-history-how-crystal-trophies-are-made-and-maintained 301
+/blog/quality-calamity-vital-role-of-high-quality-trophy-partnerships /en/blog/quality-calamity-vital-role-of-high-quality-trophy-partnerships 301
+/blog/ramadan-2025-trophies-celebrating-achievements-and-traditions /en/blog/ramadan-2025-trophies-celebrating-achievements-and-traditions 301
+/blog/rapid-turnaround-secret /en/blog/rapid-turnaround-secret 301
+/blog/recommendations-to-create-an-excellent-award-delivery-plan /en/blog/recommendations-to-create-an-excellent-award-delivery-plan 301
+/blog/reflections-on-a-year-in-crystal-2024-trophies-trends-and-triumphs /en/blog/reflections-on-a-year-in-crystal-2024-trophies-trends-and-triumphs 301
+/blog/riyadh-recognition-premium-trophies-crystal-arc-saudi-vision-2030 /en/blog/riyadh-recognition-premium-trophies-crystal-arc-saudi-vision-2030 301
+/blog/saudi-national-day-crystal-arc /ar/blog/saudi-national-day-crystal-arc 301
+/blog/saudi-national-day-gifts /en/blog/saudi-national-day-gifts 301
+/blog/showstopper-ramadan-corporate-gifts-for-2025 /en/blog/showstopper-ramadan-corporate-gifts-for-2025 301
+/blog/the-art-and-science-of-crystal-trophy-design /en/blog/the-art-and-science-of-crystal-trophy-design 301
+/blog/the-craft-behind-crystal-arcs-trophies /en/blog/the-craft-behind-crystal-arcs-trophies 301
+/blog/the-impact-of-personalised-medals-on-employee-motivation /en/blog/the-impact-of-personalised-medals-on-employee-motivation 301
+/blog/the-ripple-effect-of-recognition-how-trophies-motivate-and-empower-organisations /en/blog/the-ripple-effect-of-recognition-how-trophies-motivate-and-empower-organisations 301
+/blog/the-role-of-crystal-awards-in-modern-corporate-culture /en/blog/the-role-of-crystal-awards-in-modern-corporate-culture 301
+/blog/the-secret-to-thriving-teams-involves-employee-awards /en/blog/the-secret-to-thriving-teams-involves-employee-awards 301
+/blog/timeless-beauty-why-clear-crystal-trophies-are-always-in-style /en/blog/timeless-beauty-why-clear-crystal-trophies-are-always-in-style 301
+/blog/top-5-corporate-recognition-trends-for-2025 /en/blog/top-5-corporate-recognition-trends-for-2025 301
+/blog/top-materials-for-custom-trophies-and-awards /en/blog/top-materials-for-custom-trophies-and-awards 301
+/blog/trophy-shop-in-dubai /en/blog/trophy-shop-in-dubai 301
+/blog/trophy-trends-for-2025 /en/blog/trophy-trends-for-2025 301
+/blog/unmatched-brilliance-what-makes-crystal-trophies-the-preferred-choice-for-prestigious-awards /en/blog/unmatched-brilliance-what-makes-crystal-trophies-the-preferred-choice-for-prestigious-awards 301
+/blog/why-craftsmanship-matters-in-crystal-trophy-making /en/blog/why-craftsmanship-matters-in-crystal-trophy-making 301
+
+# ── Old Webflow site (the crystalarc.net still live today) ──
+# Its sitemap carries 528 URLs. The blog block above already maps 56 of them
+# because those slugs were migrated intact. The rest had no rule at all and
+# would have 404'd the moment the domain is cut over, taking whatever ranking
+# and inbound links they hold with them. A 301 to the nearest equivalent page
+# passes that signal on; a 404 discards it.
+#
+# The old structure is a Webflow CMS with one page per SKU, so there is no
+# like-for-like target for those — the new site has four category pages, not
+# 429 product pages. They all go to /en/products, which is the honest nearest
+# equivalent and beats a dead end for anyone arriving on an old link.
+#
+# /gifts is also indexed with pagination query strings (?9dd2465a_page=2…26).
+# Netlify matches on path only, so the single rule covers all of them.
+/award            /en/products/trophies-awards  301
+/gifts            /en/products/corporate-gifts  301
+/decor            /en/products/home-decor       301
+/decorative-glass /en/products/home-decor       301
+/our-story        /en/about                     301
+/virtual-tour     /en/craft                     301
+/partnership      /en/contact                   301
+/contact-us       /en/contact                   301
+/product          /en/products                  301
+/product/*        /en/products                  301

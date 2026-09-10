@@ -1,0 +1,159 @@
+/**
+ * Arabic / RTL layer.
+ *
+ * Loaded only by the (ar) root layout, so none of this reaches the English
+ * pages. Everything is scoped under [dir="rtl"] anyway, which is set on <html>
+ * by RootShell.
+ *
+ * The base layout does not need mirroring rule by rule: the document direction
+ * flips flex rows, text alignment, list markers and scrollbars on its own. What
+ * needs attention is anything pinned with a physical `left`/`right`, anything
+ * translated along X, and type that was tuned for Latin metrics.
+ */
+
+[dir="rtl"] {
+  /* The whole site reads these two tokens, so the pairing swaps here.
+     Latin remains in the stack after the Arabic face: brand names, model
+     codes and phone numbers stay in Latin script inside Arabic sentences and
+     should not fall back to a default serif. */
+  --font-display: var(--font-arabic-display), var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-arabic-body), var(--font-jakarta), system-ui, sans-serif;
+}
+
+/* ── Type metrics ──
+   Arabic has no capitals and a taller effective x-height, so the tracking and
+   uppercase treatments the Latin design leans on either do nothing or actively
+   hurt. Letter-spacing in particular breaks the cursive joins between glyphs. */
+[dir="rtl"] {
+  --tracking-eyebrow: 0;
+}
+
+[dir="rtl"] .eyebrow,
+[dir="rtl"] .sec-eye,
+[dir="rtl"] .stat-l,
+[dir="rtl"] .trophy-label,
+[dir="rtl"] .btn-red,
+[dir="rtl"] .btn-nav-cta,
+[dir="rtl"] .link-gold,
+[dir="rtl"] .nav-links a {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Arabic renders visually smaller than Latin at the same px size, and the
+   naskh needs more leading to keep the descenders and dots legible. */
+[dir="rtl"] body {
+  font-size: 1.05em;
+  line-height: 1.95;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+  line-height: 1.45;      /* 1.08 clips Arabic ascenders and hamzas outright */
+  letter-spacing: 0;
+  font-weight: 400;       /* Amiri has no 300; 400 is its regular */
+}
+
+/* The design uses <em> for the accented half of each heading. Arabic script
+   has no italic, so the browser synthesises an oblique by shearing the glyphs
+   — which breaks the baseline of a cursive script and reads as a rendering
+   fault. The emphasis is already carried by the gold colour, so drop the
+   slant rather than replace it. */
+[dir="rtl"] em,
+[dir="rtl"] i {
+  font-style: normal;
+}
+
+/* Latin runs inside Arabic text — brand name, "GCC", phone numbers — keep the
+   Latin face and stay left-to-right inside the RTL paragraph. */
+[dir="rtl"] .ltr,
+[dir="rtl"] [lang="en"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+/* ── Physical offsets that direction alone does not flip ── */
+
+/* The eyebrow rule sits before its text; as a flex row it mirrors correctly,
+   but the fixed-width dash needs no change. The spectrum line and nav are
+   full-bleed, so they are direction-agnostic. */
+
+[dir="rtl"] .hero-glow {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .stat + .stat::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .logo-dots {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+[dir="rtl"] .tw-cursor {
+  margin-left: 0;
+  margin-right: 3px;
+}
+
+/* ══ Marquees ══
+   Every ticker on the site is a `width: max-content` flex row animated from
+   translateX(0) to translateX(-50%), with the content duplicated so the halves
+   loop seamlessly.
+
+   That assumes the track overflows to the RIGHT, which is only true in LTR. In
+   RTL the row lays out from the right edge and overflows to the LEFT, so
+   translating further left drags the content out of view — the strip empties
+   from the right and leaves a blank band, which is exactly what the Arabic
+   homepage was showing.
+
+   Mirroring the translate fixes it: same duplication, same seam, opposite
+   direction. Reverse tracks flip too, so a row that runs against its neighbour
+   in English still does in Arabic. */
+@keyframes ticker-rtl {
+  from { transform: translateX(0); }
+  to   { transform: translateX(50%); }
+}
+@keyframes ticker-rev-rtl {
+  from { transform: translateX(50%); }
+  to   { transform: translateX(0); }
+}
+
+[dir="rtl"] .gt-track,
+[dir="rtl"] .mb-track,
+[dir="rtl"] .hof-lt,
+[dir="rtl"] .logo-ticker-track,
+[dir="rtl"] .hof-mini-track {
+  animation-name: ticker-rtl;
+}
+
+[dir="rtl"] .gt-track-rev,
+[dir="rtl"] .hof-lt.hof-lt-rev {
+  animation-name: ticker-rev-rtl;
+}
+
+/* ══ About hero — the copy block does NOT mirror ══
+   Everything else on the Arabic side flips, but this block cannot: the founders
+   stand on the right of the photograph and the left of the frame is
+   deliberately dark, so the copy sits left because of the picture, not because
+   of reading direction. Left to mirror, the quote landed across their faces.
+
+   `.about-hero-copy > *` is a block narrower than its container with
+   `margin-inline: 0`, and an over-constrained block resolves its *end* margin —
+   which is the left one under RTL, so every child snapped to the right edge.
+   Physical properties here on purpose: the intent is physical.
+
+   Scoped to the desktop layout on purpose. Below 900px the founders become a
+   backdrop under centred copy, and an unscoped rule here outranks that
+   centring (0,2,0 beats 0,1,0, !important on both) and shoved the mobile text
+   back to the left. */
+@media (min-width: 901px) {
+  [dir="rtl"] .about-hero-copy > * {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}

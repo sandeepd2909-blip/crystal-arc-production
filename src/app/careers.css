@@ -1,0 +1,63 @@
+/* Careers. Imported by the careers routes; Next hoists it globally, so every
+   rule is scoped under .crr- to keep it off the rest of the site. */
+.crr-wrap { max-width: 760px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 32px); }
+
+/* ── Open roles ── */
+.crr-list { display: grid; gap: 2px; }
+
+/* <details> rather than a JS accordion: the roles must be readable with no
+   script, and browser find-in-page opens a closed <details> to reach a match,
+   which a div-based accordion does not. */
+.crr-job { border-bottom: 1px solid rgba(26, 21, 18, 0.1); }
+.crr-job[open] { background: rgba(140, 104, 32, 0.03); }
+.crr-sum { display: flex; align-items: center; gap: 20px; padding: 26px 4px;
+  cursor: pointer; list-style: none; }
+.crr-sum::-webkit-details-marker { display: none; }
+.crr-sum:hover .crr-t { color: var(--color-gold); }
+.crr-sum-main { flex: 1; min-width: 0; }
+.crr-t { font-family: var(--font-display); font-size: 1.35rem; font-weight: 400;
+  color: var(--color-ivory); line-height: 1.25; margin-bottom: 8px; transition: color 0.25s; }
+.crr-meta { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--color-gold); }
+.crr-meta span + span::before { content: "·"; margin: 0 8px; opacity: 0.6; }
+
+/* The chevron rotates, so it must not mirror under RTL — a caret pointing away
+   from the panel it opens reads as broken in either direction. */
+.crr-chev { flex-shrink: 0; width: 24px; height: 24px; display: grid; place-items: center;
+  color: var(--color-gold); transition: transform 0.25s; }
+.crr-job[open] .crr-chev { transform: rotate(180deg); }
+
+.crr-panel { padding: 0 4px 32px; }
+.crr-lede { font-size: 15px; line-height: 1.8; color: var(--color-taupe); margin: 0 0 26px; }
+.crr-h { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--color-gold); margin: 0 0 12px; font-weight: 500; }
+.crr-ul { margin: 0 0 26px; padding-inline-start: 1.1em; }
+.crr-ul li { font-size: 14.5px; line-height: 1.75; color: var(--color-ivory);
+  margin-bottom: 8px; }
+
+.crr-apply { display: inline-flex; align-items: center; gap: 10px; min-height: 46px;
+  padding: 0 26px; background: var(--color-ivory); color: var(--color-bg);
+  font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+  text-decoration: none; transition: background 0.25s; }
+.crr-apply:hover { background: var(--color-gold); }
+
+/* ── No open roles ── */
+/* This is the page's normal state, not an error state, so it is styled as a
+   deliberate panel rather than as a message about something being missing. */
+.crr-empty { border: 1px solid rgba(26, 21, 18, 0.12); padding: clamp(28px, 6vw, 44px);
+  text-align: center; }
+.crr-empty-t { font-family: var(--font-display); font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 400; color: var(--color-ivory); margin-bottom: 12px; }
+.crr-empty-d { font-size: 14.5px; line-height: 1.8; color: var(--color-taupe);
+  max-width: 46ch; margin: 0 auto 26px; }
+
+/* ── Speculative applications ── */
+.crr-note { margin-top: 44px; padding-top: 32px; border-top: 1px solid rgba(26, 21, 18, 0.1);
+  font-size: 14px; line-height: 1.8; color: var(--color-taupe); }
+.crr-note a { color: var(--color-gold); text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 640px) {
+  .crr-sum { gap: 14px; padding: 22px 2px; }
+  .crr-t { font-size: 1.15rem; }
+  .crr-apply { width: 100%; justify-content: center; }
+}

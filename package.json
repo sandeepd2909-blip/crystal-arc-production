@@ -1,0 +1,45 @@
+{
+  "name": "crystal-arc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "jobs": "node scripts/check-jobs.mjs",
+    "og": "node scripts/build-og.mjs",
+    "thumbs": "node scripts/build-thumbs.mjs",
+    "publish": "node scripts/publish.mjs",
+    "translations": "node scripts/audit-translations.mjs",
+    "facts": "node scripts/audit-facts.mjs",
+    "case-images": "node scripts/build-case-images.mjs",
+    "case-audit": "node scripts/audit-case-images.mjs",
+    "crosslinks": "node scripts/build-crosslinks.mjs",
+    "blog-tags": "node scripts/build-blog-tags.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "gsap": "^3.15.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.11",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "playwright": "^1.60.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
