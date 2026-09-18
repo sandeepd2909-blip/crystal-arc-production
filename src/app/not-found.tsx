@@ -20,9 +20,8 @@ export const metadata: Metadata = {
  */
 export default function NotFound() {
   return (
-    <html lang="en" className={latinFontClass}>
-      <body
-        style={{
+    <html lang="en" className={latinFontClass} suppressHydrationWarning>
+      <body suppressHydrationWarning style={{
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
