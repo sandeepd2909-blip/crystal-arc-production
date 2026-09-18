@@ -370,8 +370,7 @@ export default function Nav({ locale = DEFAULT_LOCALE }: { locale?: Locale }) {
  * The language toggle.
  *
  * Shows both languages at once with the current one filled, rather than a
- * single link naming the other language. The old control read "العربية" on the
- * English pages and "English" on the Arabic ones, which named the destination
+ * single link naming the other language. The old control read "العربية" on the * English pages and"English" on the Arabic ones, which named the destination
  * but never the current state, and looked like a label rather than a control.
  *
  * Two details worth keeping:

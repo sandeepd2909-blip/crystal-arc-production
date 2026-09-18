@@ -27,4 +27,4 @@ export const jakarta = Plus_Jakarta_Sans({
   preload: true,
 });
 
-export const latinFontClass = `${cormorant.variable} ${jakarta.variable}`;
+export const latinFontClass = `${cormorant?.variable} ${jakarta?.variable}`;

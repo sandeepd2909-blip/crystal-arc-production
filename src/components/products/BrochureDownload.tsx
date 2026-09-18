@@ -75,9 +75,7 @@ export default function BrochureDownload({ locale = DEFAULT_LOCALE }: { locale?:
           {locale === "ar" ? "وصلنا طلبكم." : "Request received."}
         </p>
         <p style={{ fontSize: "13px", color: "var(--color-taupe)", marginBottom: "10px" }}>
-          {locale === "ar"
-            ? "يمكنك تنزيل الكتالوج الآن. وقد استلم فريقنا طلبك أيضًا."
-            : "Your request has reached our team. You can download the catalogue now."}
+          {locale === "ar" ?"يمكنك تنزيل الكتالوج الآن. وقد استلم فريقنا طلبك أيضًا." :"Your request has reached our team. You can download the catalogue now."}
         </p>
         <a href="/brochure/trophies-awards.pdf" download className="btn-ghost">
           {locale === "ar" ? "تنزيل الكتالوج ←" : "Download catalogue →"}

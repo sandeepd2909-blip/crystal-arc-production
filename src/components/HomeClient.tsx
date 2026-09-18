@@ -5,6 +5,8 @@
 import { useEffect } from "react";
 import { Locale, DEFAULT_LOCALE } from "@/lib/i18n";
 import { ui } from "@/lib/dictionaries/ui";
+import Nav from '@/components/Nav';
+
 
 /**
  * Homepage behaviour, carried over verbatim from the old static index.html:

@@ -177,9 +177,7 @@ export default function EnquiryForm({ locale = DEFAULT_LOCALE }: { locale?: Loca
       </div>
       {status === "error" && (
         <p role="alert" style={{ marginTop: "18px", color: "#9f2d2d", fontSize: "13px", lineHeight: 1.6 }}>
-          {locale === "ar"
-            ? "تعذّر إرسال الطلب. يرجى المحاولة مرة أخرى أو مراسلتنا عبر واتساب."
-            : "We could not send your enquiry. Please try again or contact us on WhatsApp."}
+          {locale === "ar" ?"تعذّر إرسال الطلب. يرجى المحاولة مرة أخرى أو مراسلتنا عبر واتساب." :"We could not send your enquiry. Please try again or contact us on WhatsApp."}
         </p>
       )}
     </form>

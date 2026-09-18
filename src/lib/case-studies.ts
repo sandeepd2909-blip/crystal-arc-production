@@ -13,8 +13,7 @@
  * Dubai Police or a defence ministry is not a placeholder, it is an invented
  * endorsement.
  *
- * Section headings were near-identical across all 29 — "Design, Production &
- * Execution" appeared 29 times, "Outcome" 22, "Material, Finish & Presence" 20.
+ * Section headings were near-identical across all 29 — "Design, Production & * Execution" appeared 29 times, "Outcome" 22, "Material, Finish & Presence" 20.
  * Twenty-nine pages sharing one heading set wastes the strongest on-page signal
  * they have and reads as templated. Each heading was rewritten to describe what
  * that section actually covers for that client, carrying the page's keyword
@@ -77,9 +76,7 @@ export type CaseStudy = {
   images: string[];
   /** Parallel to `images`. A string where the frame is shared process
    *  photography and must describe the work rather than the client — the
-   *  factory frames are reused across studies, so calling one "Kayali — Cutting
-   *  and Hand-Polishing" would be a claim about a photograph of someone else's
-   *  job. `null` where the frame really is this client's own piece, and the
+   *  factory frames are reused across studies, so calling one "Kayali — Cutting *  and Hand-Polishing" would be a claim about a photograph of someone else's *  job. `null` where the frame really is this client's own piece, and the
    *  page describes it from the client name and section heading instead. */
   imageAlts: (string | null)[];
   /** The same, in Arabic. Without it the Arabic pages carry English alt text. */

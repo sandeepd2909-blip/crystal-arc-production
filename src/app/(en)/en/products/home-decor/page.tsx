@@ -10,23 +10,23 @@ import FAQAccordion from "@/components/products/FAQAccordion";
 export const metadata: Metadata = {
   title: "Home & Décor, Lost-Wax Crystal, Dubai",
   description:
-    "Sculpture and vessels in lost-wax crystal, made by hand at our UAE facility. Twenty-five days in the kiln, numbered and signed. Price on request.",
+  "Sculpture and vessels in lost-wax crystal, made by hand at our UAE facility. Twenty-five days in the kiln, numbered and signed. Price on request.",
   keywords: [
-    "lost wax crystal Dubai",
-    "pate de verre sculpture UAE",
-    "handmade crystal vase Dubai",
-    "luxury glass sculpture Middle East",
-    "crystal arc home collection",
-    "commission crystal sculpture",
-  ],
+  "lost wax crystal Dubai",
+  "pate de verre sculpture UAE",
+  "handmade crystal vase Dubai",
+  "luxury glass sculpture Middle East",
+  "crystal arc home collection",
+  "commission crystal sculpture"],
+
   openGraph: {
     url: "https://www.crystalarc.net/en/products/home-decor",
     title: "Home & Décor | Crystal Arc",
     description:
-      "Lost-wax crystal sculpture and vessels, made entirely by hand in Dubai. Each piece numbered and signed.",
-    images: [{ url: ogUrl("/hd-hero.webp"), width: 1200, height: 630 }],
+    "Lost-wax crystal sculpture and vessels, made entirely by hand in Dubai. Each piece numbered and signed.",
+    images: [{ url: ogUrl("/hd-hero.webp"), width: 1200, height: 630 }]
   },
-  alternates: alternatesFor("en", "/products/home-decor"),
+  alternates: alternatesFor("en", "/products/home-decor")
 };
 
 const waLink = `https://wa.me/971565364384?text=${encodeURIComponent(
@@ -35,93 +35,93 @@ const waLink = `https://wa.me/971565364384?text=${encodeURIComponent(
 
 /* Coloured lost-wax sculpture */
 const SCULPTURE = [
-  { src: "/hd-s01.webp", alt: "Crystal sculpture of a face resting on cupped hands, in violet and amber" },
-  { src: "/hd-s02.webp", alt: "Abstract crystal sculpture of flowing drapery in violet and rose" },
-  { src: "/hd-s03.webp", alt: "Reclining lioness sculpted in amber crystal" },
-  { src: "/hd-s04.webp", alt: "Leaping animal sculpture in green and amber crystal" },
-  { src: "/hd-s05.webp", alt: "Amber crystal disc sculpture on a polished base" },
-  { src: "/hd-s06.webp", alt: "Crystal landscape scene with deer, cast as a single tableau" },
-];
+{ src: "/hd-s01.webp", alt: "Crystal sculpture of a face resting on cupped hands, in violet and amber" },
+{ src: "/hd-s02.webp", alt: "Abstract crystal sculpture of flowing drapery in violet and rose" },
+{ src: "/hd-s03.webp", alt: "Reclining lioness sculpted in amber crystal" },
+{ src: "/hd-s04.webp", alt: "Leaping animal sculpture in green and amber crystal" },
+{ src: "/hd-s05.webp", alt: "Amber crystal disc sculpture on a polished base" },
+{ src: "/hd-s06.webp", alt: "Crystal landscape scene with deer, cast as a single tableau" }];
+
 
 /* Vessels — coloured, then clear and frosted relief */
 const VESSELS = [
-  { src: "/hd-v01.webp", alt: "Green crystal vase with sculpted leaf surface and a lotus bloom" },
-  { src: "/hd-v02.webp", alt: "Crystal vase with sculpted tulips in deep plum and amber" },
-  { src: "/hd-v03.webp", alt: "Crystal vase with sculpted tulips in soft rose and green" },
-  { src: "/hd-v04.webp", alt: "Crystal vase with a violet mosaic surface" },
-  { src: "/hd-v05.webp", alt: "Small crystal vessel in blue and amber" },
-  { src: "/hd-v06.webp", alt: "Clear crystal vase with frosted relief detail" },
-  { src: "/hd-v07.webp", alt: "Clear crystal vase with sculpted frosted surface" },
-  { src: "/hd-v08.webp", alt: "Clear crystal vase with frosted botanical relief" },
-  { src: "/hd-v09.webp", alt: "Clear crystal vase with dense frosted relief" },
-  { src: "/hd-v10.webp", alt: "Clear crystal vase with frosted relief on a marble console" },
-  { src: "/hd-v11.webp", alt: "Clear crystal vase with sculpted frosted panels" },
-];
+{ src: "/hd-v01.webp", alt: "Green crystal vase with sculpted leaf surface and a lotus bloom" },
+{ src: "/hd-v02.webp", alt: "Crystal vase with sculpted tulips in deep plum and amber" },
+{ src: "/hd-v03.webp", alt: "Crystal vase with sculpted tulips in soft rose and green" },
+{ src: "/hd-v04.webp", alt: "Crystal vase with a violet mosaic surface" },
+{ src: "/hd-v05.webp", alt: "Small crystal vessel in blue and amber" },
+{ src: "/hd-v06.webp", alt: "Clear crystal vase with frosted relief detail" },
+{ src: "/hd-v07.webp", alt: "Clear crystal vase with sculpted frosted surface" },
+{ src: "/hd-v08.webp", alt: "Clear crystal vase with frosted botanical relief" },
+{ src: "/hd-v09.webp", alt: "Clear crystal vase with dense frosted relief" },
+{ src: "/hd-v10.webp", alt: "Clear crystal vase with frosted relief on a marble console" },
+{ src: "/hd-v11.webp", alt: "Clear crystal vase with sculpted frosted panels" }];
+
 
 const STEPS = [
-  {
-    num: "01",
-    label: "The Mould",
-    img: "/hd-process-1.webp",
-    alt: "Molten crystal being worked into a mould under the press",
-    text:
-      "The form is modelled in wax, then encased. When the mould is fired the wax runs out and is gone. This is where lost wax takes its name. What remains is a hollow in the exact shape of the piece, and it exists only once.",
-  },
-  {
-    num: "02",
-    label: "The Fire",
-    img: "/hd-process-3.webp",
-    alt: "The mouth of the furnace, glowing at working temperature",
-    text:
-      "Crystal is packed into the mould and the kiln is closed. Over twenty-five days it climbs, holds, and then cools, slowly enough that the piece does not fracture. Colour is not applied afterwards. It fuses into the crystal in the fire.",
-  },
-  {
-    num: "03",
-    label: "The Hand",
-    img: "/hd-process-2.webp",
-    alt: "A craftsman finishing a crystal piece by flame at the bench",
-    text:
-      "The mould is broken away to release the piece, and cannot be used again. What comes out is raw. Every surface after that is ground, polished and finished by hand, by people who have spent years learning to judge it by eye.",
-  },
-];
+{
+  num: "01",
+  label: "The Mould",
+  img: "/hd-process-1.webp",
+  alt: "Molten crystal being worked into a mould under the press",
+  text:
+  "The form is modelled in wax, then encased. When the mould is fired the wax runs out and is gone. This is where lost wax takes its name. What remains is a hollow in the exact shape of the piece, and it exists only once."
+},
+{
+  num: "02",
+  label: "The Fire",
+  img: "/hd-process-3.webp",
+  alt: "The mouth of the furnace, glowing at working temperature",
+  text:
+  "Crystal is packed into the mould and the kiln is closed. Over twenty-five days it climbs, holds, and then cools, slowly enough that the piece does not fracture. Colour is not applied afterwards. It fuses into the crystal in the fire."
+},
+{
+  num: "03",
+  label: "The Hand",
+  img: "/hd-process-2.webp",
+  alt: "A craftsman finishing a crystal piece by flame at the bench",
+  text:
+  "The mould is broken away to release the piece, and cannot be used again. What comes out is raw. Every surface after that is ground, polished and finished by hand, by people who have spent years learning to judge it by eye."
+}];
+
 
 const FACTS = [
-  { num: "25", sup: " days", label: "In the kiln\nfiring and cooling" },
-  { num: "45", sup: " days", label: "From order\nto finished piece" },
-  { num: "100", sup: "%", label: "Made in-house\nUAE facility" },
-  { num: "1", sup: " of 1", label: "Every mould\nused once" },
-];
+{ num: "25", sup: " days", label: "In the kiln\nfiring and cooling" },
+{ num: "45", sup: " days", label: "From order\nto finished piece" },
+{ num: "100", sup: "%", label: "Made in-house\nUAE facility" },
+{ num: "1", sup: " of 1", label: "Every mould\nused once" }];
+
 
 const FAQS = [
-  {
-    q: "What is lost wax, and why does it take so long?",
-    a: "The form is modelled in wax and encased in a mould. Firing the mould melts the wax away, leaving a cavity in the exact shape of the piece. Crystal is packed in, and the kiln then runs for around twenty-five days, climbing to temperature, holding, and cooling slowly. The cooling is the part that cannot be rushed: bring crystal down too quickly and it cracks. From order to finished piece is about forty-five days.",
-  },
-  {
-    q: "Is each piece really unique?",
-    a: "Yes, by necessity. The mould has to be broken to get the piece out, so it can never be used again. Pieces are made in limited runs, and each one is numbered and signed.",
-  },
-  {
-    q: "How is the colour achieved?",
-    a: "It is fused into the crystal during firing, not painted or coated on afterwards. That is why the colour sits inside the material and shifts with the light rather than sitting on the surface.",
-  },
-  {
-    q: "What does a piece cost?",
-    a: "Price is on request. Size, complexity and colour all change the working time considerably, so we quote per piece rather than publish a list. Tell us which piece interests you and we will come back with a figure.",
-  },
-  {
-    q: "Can I commission something of my own?",
-    a: "Yes. Private clients commission one-of-a-kind pieces and site-specific work, designed around a brief. The process is the same as for our own collection, the difference is that the form starts with you.",
-  },
-  {
-    q: "Do you work with interior designers and retailers?",
-    a: "Yes. Retail and interior design partners carry the collection with wholesale terms and fulfilment from Dubai worldwide. Get in touch for the wholesale catalogue.",
-  },
-  {
-    q: "How are pieces packed and shipped?",
-    a: "Each piece is hand-inspected, then packed in custom-fitted foam and crating built for its exact shape before it leaves the building. We ship across the GCC and internationally, with fragile-goods handling on every shipment.",
-  },
-];
+{
+  q: "What is lost wax, and why does it take so long?",
+  a: "The form is modelled in wax and encased in a mould. Firing the mould melts the wax away, leaving a cavity in the exact shape of the piece. Crystal is packed in, and the kiln then runs for around twenty-five days, climbing to temperature, holding, and cooling slowly. The cooling is the part that cannot be rushed: bring crystal down too quickly and it cracks. From order to finished piece is about forty-five days."
+},
+{
+  q: "Is each piece really unique?",
+  a: "Yes, by necessity. The mould has to be broken to get the piece out, so it can never be used again. Pieces are made in limited runs, and each one is numbered and signed."
+},
+{
+  q: "How is the colour achieved?",
+  a: "It is fused into the crystal during firing, not painted or coated on afterwards. That is why the colour sits inside the material and shifts with the light rather than sitting on the surface."
+},
+{
+  q: "What does a piece cost?",
+  a: "Price is on request. Size, complexity and colour all change the working time considerably, so we quote per piece rather than publish a list. Tell us which piece interests you and we will come back with a figure."
+},
+{
+  q: "Can I commission something of my own?",
+  a: "Yes. Private clients commission one-of-a-kind pieces and site-specific work, designed around a brief. The process is the same as for our own collection, the difference is that the form starts with you."
+},
+{
+  q: "Do you work with interior designers and retailers?",
+  a: "Yes. Retail and interior design partners carry the collection with wholesale terms and fulfilment from Dubai worldwide. Get in touch for the wholesale catalogue."
+},
+{
+  q: "How are pieces packed and shipped?",
+  a: "Each piece is hand-inspected, then packed in custom-fitted foam and crating built for its exact shape before it leaves the building. We ship across the GCC and internationally, with fragile-goods handling on every shipment."
+}];
+
 
 
 /* This page rendered its FAQs to readers but declared none of them — no
@@ -134,7 +134,7 @@ const productJsonLd = {
   description: "Lost-wax crystal sculpture, vases and decorative objects, made by hand in Dubai.",
   brand: { "@type": "Brand", name: "Crystal Arc" },
   manufacturer: { "@type": "Organization", name: "Crystal Arc", url: "https://www.crystalarc.net" },
-  image: "https://www.crystalarc.net/hd-hero.webp",
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_4c5afcede-1789716259851.png",
   url: "https://www.crystalarc.net/en/products/home-decor",
   offers: {
     "@type": "Offer",
@@ -142,18 +142,18 @@ const productJsonLd = {
     priceSpecification: { "@type": "PriceSpecification", priceCurrency: "AED", minPrice: "1" },
     availability: "https://schema.org/InStock",
     seller: { "@type": "Organization", name: "Crystal Arc" },
-    areaServed: ["AE", "SA", "QA", "KW", "BH", "OM"],
-  },
+    areaServed: ["AE", "SA", "QA", "KW", "BH", "OM"]
+  }
 };
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.crystalarc.net/en" },
-    { "@type": "ListItem", position: 2, name: "Products", item: "https://www.crystalarc.net/en/products" },
-    { "@type": "ListItem", position: 3, name: "Home & Décor", item: "https://www.crystalarc.net/en/products/home-decor" },
-  ],
+  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.crystalarc.net/en" },
+  { "@type": "ListItem", position: 2, name: "Products", item: "https://www.crystalarc.net/en/products" },
+  { "@type": "ListItem", position: 3, name: "Home & Décor", item: "https://www.crystalarc.net/en/products/home-decor" }]
+
 };
 
 const faqJsonLd = {
@@ -162,8 +162,8 @@ const faqJsonLd = {
   mainEntity: FAQS.map((f) => ({
     "@type": "Question",
     name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
+    acceptedAnswer: { "@type": "Answer", text: f.a }
+  }))
 };
 export default function HomeDecorPage() {
   return (
@@ -173,14 +173,14 @@ export default function HomeDecorPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       {/* ══════════════════════════════════════════════
-          Hero
-      ══════════════════════════════════════════════ */}
+           Hero
+        ══════════════════════════════════════════════ */}
       <section className="hd-hero">
-        { }
+        {}
         {/* The banner is 100vw x 78vh below 560px, so its shape is the phone
-            window — 0.62 on a Pixel, 0.75 on an iPhone 12. The desktop file is
-            2000x917 landscape, which `cover` reduced to a 572-690px centre slice
-            stretched up to 2.5x. The -m render is portrait for that frame. */}
+             window — 0.62 on a Pixel, 0.75 on an iPhone 12. The desktop file is
+             2000x917 landscape, which `cover` reduced to a 572-690px centre slice
+             stretched up to 2.5x. The -m render is portrait for that frame. */}
         <picture>
           <source media="(max-width: 560px)" srcSet="/hd-hero-m.webp" />
           <img className="hd-hero-img" src="/hd-hero.webp" srcSet="/hd-hero-800.webp 800w, /hd-hero.webp 1600w" sizes="100vw" fetchPriority="high" alt="Crystal Arc home décor pieces arranged on a stone console in daylight" />
@@ -197,9 +197,9 @@ export default function HomeDecorPage() {
               lineHeight: 1.03,
               letterSpacing: "-0.01em",
               marginBottom: "26px",
-              maxWidth: "16ch",
-            }}
-          >
+              maxWidth: "16ch"
+            }}>
+            
             Objects of light,<br />
             <em style={{ fontStyle: "italic", color: "#E4C57A" }}>made entirely by hand.</em>
           </h1>
@@ -211,8 +211,8 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          Opening statement
-      ══════════════════════════════════════════════ */}
+           Opening statement
+        ══════════════════════════════════════════════ */}
       <section className="mob-pad" style={{ background: "var(--color-bg)", padding: "clamp(80px, 10vw, 140px) 0" }}>
         <div className="con">
           <div className="hd-intro">
@@ -226,9 +226,9 @@ export default function HomeDecorPage() {
                     fontWeight: 300,
                     color: "var(--color-ivory)",
                     lineHeight: 1.12,
-                    letterSpacing: "-0.01em",
-                  }}
-                >
+                    letterSpacing: "-0.01em"
+                  }}>
+                  
                   A method old enough<br />to have no shortcuts.
                 </h2>
               </div>
@@ -253,8 +253,8 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          Sculpture — feature + grid
-      ══════════════════════════════════════════════ */}
+           Sculpture — feature + grid
+        ══════════════════════════════════════════════ */}
       <section className="hd-split" style={{ background: "var(--color-s1)", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="hd-split-img">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -271,9 +271,9 @@ export default function HomeDecorPage() {
                 fontStyle: "italic",
                 color: "var(--color-ivory)",
                 lineHeight: 1.14,
-                marginBottom: "24px",
-              }}
-            >
+                marginBottom: "24px"
+              }}>
+              
               Colour that lives<br />inside the crystal.
             </h2>
             <p style={{ fontSize: "15px", color: "var(--color-i60)", lineHeight: 2.0, maxWidth: "480px" }}>
@@ -286,22 +286,22 @@ export default function HomeDecorPage() {
       <section className="mob-pad" style={{ background: "var(--color-bg)", padding: "clamp(64px, 8vw, 110px) 0" }}>
         <div className="con">
           <div className="hd-grid">
-            {SCULPTURE.map((p, i) => (
-              <Reveal key={p.src} delay={(i % 3) * 90}>
+            {SCULPTURE.map((p, i) =>
+            <Reveal key={p.src} delay={i % 3 * 90}>
                 <figure className="hd-card">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={p.src} alt={p.alt} loading="lazy" />
                 </figure>
               </Reveal>
-            ))}
+            )}
           </div>
         </div>
       </section>
 
 
       {/* ══════════════════════════════════════════════
-          Vessels — feature + grid
-      ══════════════════════════════════════════════ */}
+           Vessels — feature + grid
+        ══════════════════════════════════════════════ */}
       <section className="hd-split hd-split--rev" style={{ background: "var(--color-s1)", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="hd-split-img">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -318,9 +318,9 @@ export default function HomeDecorPage() {
                 fontStyle: "italic",
                 color: "var(--color-ivory)",
                 lineHeight: 1.14,
-                marginBottom: "24px",
-              }}
-            >
+                marginBottom: "24px"
+              }}>
+              
               Vases carrying<br />their own relief.
             </h2>
             <p style={{ fontSize: "15px", color: "var(--color-i60)", lineHeight: 2.0, maxWidth: "480px" }}>
@@ -333,22 +333,22 @@ export default function HomeDecorPage() {
       <section className="mob-pad" style={{ background: "var(--color-bg)", padding: "clamp(64px, 8vw, 110px) 0" }}>
         <div className="con">
           <div className="hd-grid">
-            {VESSELS.map((p, i) => (
-              <Reveal key={p.src} delay={(i % 3) * 90}>
+            {VESSELS.map((p, i) =>
+            <Reveal key={p.src} delay={i % 3 * 90}>
                 <figure className="hd-card">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={p.src} alt={p.alt} loading="lazy" />
                 </figure>
               </Reveal>
-            ))}
+            )}
           </div>
         </div>
       </section>
 
 
       {/* ══════════════════════════════════════════════
-          Savoir-faire — the three steps
-      ══════════════════════════════════════════════ */}
+           Savoir-faire — the three steps
+        ══════════════════════════════════════════════ */}
       <section className="mob-pad" style={{ background: "var(--color-s1)", padding: "clamp(84px, 10vw, 140px) 0", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="con">
           <Reveal>
@@ -361,9 +361,9 @@ export default function HomeDecorPage() {
                   fontWeight: 300,
                   color: "var(--color-ivory)",
                   lineHeight: 1.12,
-                  marginBottom: "22px",
-                }}
-              >
+                  marginBottom: "22px"
+                }}>
+                
                 Three stages.<br />None of them quick.
               </h2>
               <p style={{ fontSize: "15px", color: "var(--color-i60)", lineHeight: 2.0 }}>
@@ -373,8 +373,8 @@ export default function HomeDecorPage() {
           </Reveal>
 
           <div className="hd-steps">
-            {STEPS.map((s, i) => (
-              <Reveal key={s.num} delay={i * 110}>
+            {STEPS.map((s, i) =>
+            <Reveal key={s.num} delay={i * 110}>
                 <div>
                   <div className="hd-step-img">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -387,18 +387,18 @@ export default function HomeDecorPage() {
                   <p style={{ fontSize: "14px", color: "var(--color-i60)", lineHeight: 1.95 }}>{s.text}</p>
                 </div>
               </Reveal>
-            ))}
+            )}
           </div>
         </div>
       </section>
 
 
       {/* ══════════════════════════════════════════════
-          The hand behind the work
-          Deliberately NOT a named testimonial: no craftsman has given us words
-          to quote, so this is the house voice set beside a photograph of the
-          floor, rather than an invented person with an invented tenure.
-      ══════════════════════════════════════════════ */}
+           The hand behind the work
+           Deliberately NOT a named testimonial: no craftsman has given us words
+           to quote, so this is the house voice set beside a photograph of the
+           floor, rather than an invented person with an invented tenure.
+        ══════════════════════════════════════════════ */}
       <section className="hd-split" style={{ background: "var(--color-s1)", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="hd-split-img">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -417,9 +417,9 @@ export default function HomeDecorPage() {
                 lineHeight: 1.32,
                 margin: 0,
                 marginBottom: "28px",
-                maxWidth: "16ch",
-              }}
-            >
+                maxWidth: "16ch"
+              }}>
+              
               The kiln decides when a piece is finished. Never the calendar.
             </blockquote>
             <div className="gold-line" style={{ margin: "0 0 26px" }} />
@@ -432,17 +432,17 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          Facts
-          The tinted band stays the outer full-width block, with .con nested
-          inside it — wrapping the band itself in .con would shrink the colour
-          to 1280px and expose the section background at the edges.
-      ══════════════════════════════════════════════ */}
+           Facts
+           The tinted band stays the outer full-width block, with .con nested
+           inside it — wrapping the band itself in .con would shrink the colour
+           to 1280px and expose the section background at the edges.
+        ══════════════════════════════════════════════ */}
       <section style={{ background: "var(--color-bg)", padding: "clamp(64px, 8vw, 104px) 0", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="con">
           <Reveal>
             <div className="hd-facts">
-              {FACTS.map((f) => (
-                <div key={f.label} className="hd-fact">
+              {FACTS.map((f) =>
+              <div key={f.label} className="hd-fact">
                   <div className="hd-fact-num">
                     {f.num}<span style={{ fontSize: "0.42em", letterSpacing: "0.02em" }}>{f.sup}</span>
                   </div>
@@ -450,7 +450,7 @@ export default function HomeDecorPage() {
                     {f.label}
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </Reveal>
         </div>
@@ -458,8 +458,8 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          Examine a piece — 3D
-      ══════════════════════════════════════════════ */}
+           Examine a piece — 3D
+        ══════════════════════════════════════════════ */}
       <section className="hd-split" style={{ background: "var(--color-s1)", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <Reveal from="left">
           <div className="hd-split-copy">
@@ -472,9 +472,9 @@ export default function HomeDecorPage() {
                 fontStyle: "italic",
                 color: "var(--color-ivory)",
                 lineHeight: 1.14,
-                marginBottom: "24px",
-              }}
-            >
+                marginBottom: "24px"
+              }}>
+              
               Turn one over<br />before you decide.
             </h2>
             <p style={{ fontSize: "15px", color: "var(--color-i60)", lineHeight: 2.0, maxWidth: "460px", marginBottom: "34px" }}>
@@ -491,8 +491,8 @@ export default function HomeDecorPage() {
             src="/model-1.glb"
             alt="Crystal Arc home décor piece, rotatable 3D model"
             rotationSpeed="4deg/s"
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-          />
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} />
+          
           <div style={{ position: "absolute", bottom: "26px", left: "50%", transform: "translateX(-50%)", fontSize: "8px", letterSpacing: "0.24em", textTransform: "uppercase", color: "rgba(26,21,18,0.4)", whiteSpace: "nowrap", zIndex: 2 }}>
             Drag to rotate
           </div>
@@ -501,8 +501,8 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          Brochure
-      ══════════════════════════════════════════════ */}
+           Brochure
+        ══════════════════════════════════════════════ */}
       <section className="mob-pad brochure-section" style={{ background: "var(--color-bg)", padding: "clamp(72px, 9vw, 120px) 0", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="con">
           <div className="sec-brochure-grid" style={{ gap: "56px" }}>
@@ -517,9 +517,9 @@ export default function HomeDecorPage() {
                     fontWeight: 300,
                     color: "var(--color-ivory)",
                     lineHeight: 1.1,
-                    marginBottom: "22px",
-                  }}
-                >
+                    marginBottom: "22px"
+                  }}>
+                  
                   The collection,<br />
                   <em style={{ color: "var(--color-gold)", fontStyle: "italic" }}>in full.</em>
                 </h2>
@@ -531,23 +531,23 @@ export default function HomeDecorPage() {
 
             <Reveal delay={100}>
               <div>
-                {["Full collection with dimensions", "Colourways and edition sizes", "Commission process", "Retail and wholesale terms"].map((item) => (
-                  <div
-                    key={item}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "12px",
-                      padding: "11px 0",
-                      borderBottom: "1px solid rgba(26,21,18,0.09)",
-                      fontSize: "13px",
-                      color: "var(--color-i60)",
-                    }}
-                  >
+                {["Full collection with dimensions", "Colourways and edition sizes", "Commission process", "Retail and wholesale terms"].map((item) =>
+                <div
+                  key={item}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "11px 0",
+                    borderBottom: "1px solid rgba(26,21,18,0.09)",
+                    fontSize: "13px",
+                    color: "var(--color-i60)"
+                  }}>
+                  
                     <span style={{ width: "4px", height: "4px", borderRadius: "50%", background: "var(--color-gold)", flexShrink: 0, opacity: 0.7 }} />
                     {item}
                   </div>
-                ))}
+                )}
               </div>
             </Reveal>
 
@@ -569,8 +569,8 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          Enquiry
-      ══════════════════════════════════════════════ */}
+           Enquiry
+        ══════════════════════════════════════════════ */}
       <section className="mob-pad" style={{ background: "var(--color-s1)", padding: "clamp(80px, 10vw, 120px) 0", borderTop: "1px solid rgba(26,21,18,0.08)" }}>
         <div className="con">
           <div className="sec-enquiry-grid" style={{ gap: "80px" }}>
@@ -585,9 +585,9 @@ export default function HomeDecorPage() {
                     fontWeight: 300,
                     color: "var(--color-ivory)",
                     lineHeight: 1.1,
-                    marginBottom: "18px",
-                  }}
-                >
+                    marginBottom: "18px"
+                  }}>
+                  
                   Commission a piece.<br />
                   <em style={{ color: "var(--color-gold)" }}>Or carry the collection.</em>
                 </h2>
@@ -595,31 +595,31 @@ export default function HomeDecorPage() {
                   Private clients commission one-of-a-kind pieces and site-specific work. Retail and interior design partners carry the collection with wholesale terms and fulfilment from Dubai worldwide. Price is quoted per piece.
                 </p>
                 {[
-                  { label: "WhatsApp", val: "+971 56 536 4384", href: waLink },
-                  { label: "Email", val: "info@crystalarc.net", href: "mailto:info@crystalarc.net" },
-                ].map((c) => (
-                  <div
-                    key={c.label}
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "80px 1fr",
-                      gap: "16px",
-                      padding: "14px 0",
-                      borderBottom: "1px solid rgba(26,21,18,0.12)",
-                      alignItems: "center",
-                    }}
-                  >
+                { label: "WhatsApp", val: "+971 56 536 4384", href: waLink },
+                { label: "Email", val: "info@crystalarc.net", href: "mailto:info@crystalarc.net" }].
+                map((c) =>
+                <div
+                  key={c.label}
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "80px 1fr",
+                    gap: "16px",
+                    padding: "14px 0",
+                    borderBottom: "1px solid rgba(26,21,18,0.12)",
+                    alignItems: "center"
+                  }}>
+                  
                     <span style={{ fontSize: "9px", letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--color-taupe)", fontWeight: 600 }}>{c.label}</span>
                     <a
-                      href={c.href}
-                      target={c.href.startsWith("http") ? "_blank" : undefined}
-                      rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                      style={{ fontSize: "15px", color: "var(--color-ivory)", textDecoration: "none" }}
-                    >
+                    href={c.href}
+                    target={c.href.startsWith("http") ? "_blank" : undefined}
+                    rel={c.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    style={{ fontSize: "15px", color: "var(--color-ivory)", textDecoration: "none" }}>
+                    
                       {c.val}
                     </a>
                   </div>
-                ))}
+                )}
                 <div style={{ marginTop: "28px", border: "1px solid rgba(140,104,32,0.28)", background: "rgba(140,104,32,0.06)", padding: "20px 22px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
@@ -647,8 +647,8 @@ export default function HomeDecorPage() {
 
 
       {/* ══════════════════════════════════════════════
-          FAQ
-      ══════════════════════════════════════════════ */}
+           FAQ
+        ══════════════════════════════════════════════ */}
       <section className="mob-pad" style={{ background: "var(--color-bg)", padding: "clamp(72px, 9vw, 100px) 0", borderTop: "1px solid rgba(26,21,18,0.09)" }}>
         <div className="con">
           <div className="sec-faq-grid">
@@ -671,6 +671,6 @@ export default function HomeDecorPage() {
         </div>
       </section>
 
-    </>
-  );
+    </>);
+
 }
