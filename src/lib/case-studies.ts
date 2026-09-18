@@ -156,7 +156,7 @@ export function arabicCaseStudies(): CaseStudy[] {
 }
 
 /** Canonical + hreflang for a study, honest about which languages exist. */
-export function caseStudyAlternates(locale: "en" | "ar", slug: string) {
+export function caseStudyAlternates(locale: "en\" | \"ar", slug: string) {
   const en = `/en/our-work/${slug}`;
   const ar = `/ar/our-work/${slug}`;
   const self = locale === "ar" ? ar : en;
