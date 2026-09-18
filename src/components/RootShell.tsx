@@ -28,7 +28,7 @@ export default function RootShell({
   children: React.ReactNode;
 }) {
   return (
-    <html lang={locale} dir={dirOf(locale)} className={fontClass}>
+    <html lang={locale} dir={dirOf(locale)} className={fontClass} suppressHydrationWarning>
       <head>
         {/* Google Analytics 4 — Crystal Arc GA4.
             This is intentionally loaded directly from the site code because the
@@ -55,7 +55,7 @@ export default function RootShell({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData(locale)) }}
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <MotionProvider>
         {/* WCAG 2.4.1 needs a way past the navigation. The nav carries seven
             top-level items with two dropdowns, so a keyboard or screen-reader
