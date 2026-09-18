@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   turbopack: {},
+  allowedDevOrigins: ["crystalarc3649.builtwithrocket.new"],
 
   images: {
     unoptimized: true,
