@@ -4,7 +4,7 @@ import { alternatesFor } from "@/lib/i18n";
 import Reveal from "@/components/Reveal";
 import EnquiryForm from "@/components/products/EnquiryForm";
 import HofGallery from "@/components/our-work/HofGallery";
-import Link from "next/link";
+
 import { localePath } from "@/lib/i18n";
 import { arabicCaseStudies, SECTORS } from "@/lib/case-studies";
 import CaseStudyGrid from "@/components/our-work/CaseStudyGrid";

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { thumbSrcSet, CARD_SIZES } from "@/lib/thumbs";
-import { WORK_PIECES, WorkMaterial } from "@/lib/work-gallery";
+import { WORK_PIECES } from "@/lib/work-gallery";
 
 /** Filter values are the material names from the data and must stay in English
  *  or the filter stops matching. Display labels come from LABELS below. */

@@ -50,7 +50,7 @@ export default function HomePage() {
             <h1 className="reveal d1">
               The Pieces<br/>
               <span className="cycle-wrap"><span id="cycle-word"></span><span className="tw-cursor"></span></span><br/>
-              <span style={{ color: 'var(--i60)' }}>Want the World<br/>to Remember</span>
+              <span style={{ color: 'var(--i60)' }}>Want the World&lt;br/&gt;to Remember</span>
             </h1>
             <p className="hero-sub reveal d2">
               Crystal Arc designs and manufactures the trophies, gifts, and presentation pieces that mark the moments <strong>governments, brands, and institutions</strong> want the world to remember.
@@ -564,7 +564,7 @@ export default function HomePage() {
           <div className="trust-hero reveal">
             <div className="trust-num-block">
               <span className="trust-n">15,000<sup>+</sup></span>
-              <div className="trust-n-label">Clients.<br/>Zero Compromises.</div>
+              <div className="trust-n-label">Clients.&lt;br/&gt;Zero Compromises.</div>
             </div>
             <div className="trust-intro">
               <p>The Gulf's governments, its most iconic brands, its largest corporations, and its greatest sports moments. They've all trusted Crystal Arc to make the piece that stood on the stage.</p>

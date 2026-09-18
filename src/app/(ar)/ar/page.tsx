@@ -54,7 +54,7 @@ export default function HomePage() {
             <h1 className="reveal d1">
               القطع التي<br/>
               <span className="cycle-wrap"><span id="cycle-word"></span><span className="tw-cursor"></span></span><br/>
-              <span style={{ color: 'var(--i60)' }}>تُخلّدها<br/>في الذاكرة</span>
+              <span style={{ color: 'var(--i60)' }}>تُخلّدها&lt;br/&gt;في الذاكرة</span>
             </h1>
             <p className="hero-sub reveal d2">
               نصمّم ونصنّع الجوائز والهدايا وقطع التقديم التي تُخلّد اللحظات التي تريد <strong>الجهات الحكومية والعلامات والمؤسسات</strong> أن يتذكّرها العالم.
@@ -568,7 +568,7 @@ export default function HomePage() {
           <div className="trust-hero reveal">
             <div className="trust-num-block">
               <span className="trust-n">١٥٬٠٠٠<sup>+</sup></span>
-              <div className="trust-n-label">عميل.<br/>وبلا أي تنازل.</div>
+              <div className="trust-n-label">عميل.&lt;br/&gt;وبلا أي تنازل.</div>
             </div>
             <div className="trust-intro">
               <p>حكومات الخليج، وأبرز علاماته التجارية، وكبرى شركاته، وأعظم لحظاته الرياضية، جميعها وثقت بكريستال آرك لتصنع القطعة التي وقفت على المنصة.</p>

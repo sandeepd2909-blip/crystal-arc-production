@@ -33,7 +33,7 @@ export const plexArabic = IBM_Plex_Sans_Arabic({
   preload: false,
 });
 
-export const arabicFontClass = `${amiri.variable} ${plexArabic.variable}`;
+export const arabicFontClass = `${amiri?.variable} ${plexArabic?.variable}`;
 
 /*
  * preload is off deliberately.
